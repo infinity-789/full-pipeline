@@ -9,7 +9,7 @@ pipeline {
 
         stage ('Checkout') {
             steps {
-                git 'https://github.com/infinity-789/lab11.git'
+                checkout scm
             }
         }
 
