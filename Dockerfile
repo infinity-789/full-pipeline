@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY src/ .
 
-CMD ["java", "main\java\com\devops\lab\Output.java"]
+CMD ["java", "./main/java/com/devops/lab/Output.java"]
