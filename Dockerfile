@@ -1,9 +1,7 @@
-FROM maven:3.9.9-eclipse-temurin-17
+FROM openjdk:27-ea-jdk-slim
 
 WORKDIR /app
 
-COPY . .
+COPY src/ .
 
-RUN mvn clean test
-
-CMD ["mvn", "test"]
+CMD ["java", "main\java\com\devops\lab\Output.java"]
