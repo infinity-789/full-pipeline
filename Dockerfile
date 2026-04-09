@@ -4,8 +4,6 @@ WORKDIR /app
 
 COPY src /.
 
-RUN mvn clean test
-
 EXPOSE 5020
 
 CMD ["java", "main\java\com\devops\lab\Output.java"]
